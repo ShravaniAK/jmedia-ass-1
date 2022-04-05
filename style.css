@@ -1,0 +1,130 @@
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: left;
+
+}
+.btn{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    /* align-items:center; */
+    /* height: 50vh; */
+    /* padding: 1rem; */
+    padding-top: 10rem;
+    padding-left: 14rem;
+    /* padding: 2rem; */
+}
+.btn button{
+    background-color: rgb(188, 208, 233);
+    color: black;
+    margin: 2rem;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    /* margin:auto */
+    /* display: flex; */
+}
+.btn button:hover{
+    background-color: rgb(14, 37, 68);
+    color:antiquewhite;
+}
+
+
+
+#earth {
+    place-items: left;
+    margin-left: 7rem;
+    margin-top: 10rem;
+    
+    width: 40vw;
+    height: 60vh;
+    background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+    border-radius: 50%;
+    background-size: 50rem;
+    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    z-index: -1;
+    
+
+}
+
+@keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+@-webkit-keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+@media (max-width:1027px){
+    #earth{
+        width: 30vw;
+        height: 50vh;
+        margin-top: 4rem;
+    }
+    .btn{
+        padding-top: 4rem;
+    }
+
+}
+@media (max-width:770px){
+    #earth{
+        width: 36vw;
+        height: 44vh;
+        margin-left: 4rem;
+    }
+    .btn{
+        padding-left: 4rem;
+    }
+
+}
+@media (max-width:578px){
+    #earth{
+        width: 30vw;
+        height: 34vh;
+        margin-left: 3rem;
+    }
+    .btn{
+        padding-left: 5rem;
+    }
+    .btn button{
+        margin:1rem
+    }
+
+
+}
+@media (max-width:500px){
+    #earth{
+        width: 25vw;
+        height: 30vh;
+    
+    box-shadow: inset 4px 30px 40px 16px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    }
+}
+@media (max-width:400px){
+    #earth{
+        width: 35vw;
+        height: 20vh;
+        margin-left: 1rem;
+        
+    
+    box-shadow: inset 4px 30px 40px 6px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    }
+    .btn{
+        margin-left: 0.1rem;
+        padding-left: 1rem;
+    }
+}
